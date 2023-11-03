@@ -1,0 +1,12 @@
+/*div {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+  }*/
+  .header-img {
+    width: 100%;
+    height: auto;
+  }
+  .jumbotron {
+    background-color: #343a40;
+    color: #ffffff;
+  }

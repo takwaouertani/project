@@ -1,1 +1,34 @@
-<p>aboutus works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+            <div class="jumbotron mt-4">
+                <img src="assets/img.png" class="header-img img-fluid my-4">
+                <h1 class="display-4">STAC the Fun in Every Event </h1>
+                <hr class="my-4">
+                <p>STAC Club d'Événements de notre institution! Nous sommes passionnés par l'organisation d'événements mémorables et engageants pour la communauté étudiante. Notre club est bien plus qu'une simple plateforme d'organisation d'événements ; c'est un lieu où les idées créatives prennent vie et où les étudiants peuvent se réunir pour partager leur enthousiasme pour des activités divertissantes et éducatives.</p><br/>
+           </div>
+        </div>
+    </div>
+    
+
+    <section class="section bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6" *ngFor="let m of membre">
+              <div class="card mb-4" style="background-color: black;">
+                <div class="card-body text-white">
+                  <div class="d-flex align-items-center mb-3">
+                    <img [src]="m.image" class="rounded-circle " alt="Artwork"
+                    class="rounded-circle img-fluid" style="width: 100px; height: 100px;">
+                    <div>
+                      <h5 class="card-title">{{ m.nom }}</h5>
+                      <p class="card-text">{{ m.role }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
