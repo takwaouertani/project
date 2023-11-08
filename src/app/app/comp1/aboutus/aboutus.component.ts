@@ -8,9 +8,13 @@ import { MembreService } from 'src/app/service/membre.service';
   styleUrls: ['./aboutus.component.css']
 })
 export class AboutusComponent implements OnInit {
-  membre: Membre[]=[] ;
-  constructor(private membreservice:MembreService){}
+lesmembres:Membre[]=[];
+constructor(private membreservice:MembreService){}
   ngOnInit(): void {
-    this.membre = this.membreservice.membre;  }
-
+   this.membreservice.getMembres().subscribe(
+    data=>{
+      this.lesmembres=data;
+    }
+   )
+  }
 }

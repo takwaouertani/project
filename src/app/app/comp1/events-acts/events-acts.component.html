@@ -1,1 +1,18 @@
 <p>events-acts works!</p>
+<ul *ngFor="let e of event">
+    <li>
+{{e.nom}}
+{{e.image}}
+{{e.lieu}}
+{{e.date}}
+{{e.description}}
+<ng-container *ngFor="let ee of e.partenaire">
+{{ee.nom}}
+
+</ng-container>
+
+
+
+
+
+</ul>

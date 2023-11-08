@@ -1,23 +1,19 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Membre } from '../class/membre';
 
+const URL='http://localhost:3000/membre';
 @Injectable({
   providedIn: 'root'
 })
 export class MembreService {
   
 
-  constructor() { }
-  membre:Membre[]=[
-   
-      new Membre("assets/img1.jpg","takwa ouertani","directeur"),
-      new Membre("assets/img2.jpg","Essia Ayari","directeur"),
-      new Membre("assets/img3.png","takwa ouertani","directeur"),
-      new Membre("assets/img4.png","takwa ouertani","directeur"),
-      new Membre("assets/img5.png","takwa ouertani","directeur"),
-      new Membre("assets/img6.png","takwa ouertani","directeur"),
-
-    ]
+  constructor(private http:HttpClient) { }
+  getMembres():Observable<Membre[]>{
+    return this.http.get<Membre[]>(URL);
+  }
   
 
 }

@@ -14,15 +14,15 @@
     <section class="section bg-light">
         <div class="container">
           <div class="row">
-            <div class="col-md-6" *ngFor="let m of membre">
+            <div class="col-md-6" *ngFor="let m of lesmembres">
               <div class="card mb-4" style="background-color: black;">
                 <div class="card-body text-white">
                   <div class="d-flex align-items-center mb-3">
                     <img [src]="m.image" class="rounded-circle " alt="Artwork"
                     class="rounded-circle img-fluid" style="width: 100px; height: 100px;">
                     <div>
-                      <h5 class="card-title">{{ m.nom }}</h5>
-                      <p class="card-text">{{ m.role }}</p>
+                      <h5 class="card-title">{{ m.nom_pren }}</h5>
+                      <p class="card-text">{{ m.poste }}</p>
                     </div>
                   </div>
                 </div>
