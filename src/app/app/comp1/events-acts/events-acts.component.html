@@ -1,1 +1,20 @@
 <p>events-acts works!</p>
+<ul *ngFor="let e of event">
+  <li>
+    {{ e.nom }}
+    {{ e.image }}
+    {{ e.lieu }}
+    {{ e.date }}
+    {{ e.description }}
+
+    <p>Partenaires:</p>
+    <ul *ngFor="let partner of e.partenaire">
+      <li>{{ partner.nom }}</li>
+    </ul>
+
+    <p>Organisateurs:</p>
+    <ul *ngFor="let organizer of e.organisateur">
+      <li>{{ organizer.nom }}</li>
+    </ul>
+  </li>
+</ul>
