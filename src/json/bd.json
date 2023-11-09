@@ -20,10 +20,6 @@
             {
               "nom": "Nom du partenaire 1",
               "logo": "https://example.com/logo-partenaire-1.png"
-            },
-            {
-              "nom": "Nom du partenaire 2",
-              "logo": "https://example.com/logo-partenaire-2.png"
             }
           ],
           "organisateurs": [
