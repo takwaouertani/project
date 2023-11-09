@@ -1,16 +1,26 @@
+<header class="fixed-top">
+              <nav class="navbar " >
+                    <ul class="links">
+                        <li><a  routerLink="/home"> Home</a></li>
+                        <li ><a  routerLink="/eventsandacts">  Events & Activities</a></li>
+                        <li><img src="assets/img1.png" alt="Logo" class="logo"> </li>
+                        <li ><a routerLink="/contact" > Contact</a></li> 
+                        <li ><a routerLink="/aboutus">  About Us</a></li> 
+                    </ul>
+                    <img src="assets/img2.png" class="minimenu">
+                    <div class="topnav">
+                        <input type="text" placeholder="Search..">
+                      </div>
+                </nav>
 
-  <nav class="nav nav-tabs ">
-    <ul class="nav nav-item">
-    <li><a class="nav-link navbar-brand" routerLink="/home" routerLinkActive="acive">home </a></li>
-    <li><a class="nav-link navbar-brand" routerLink="/aboutus">about us </a> </li>
-    <li> <a class="nav-link navbar-brand" routerLink="/eventsandacts">events & activities</a></li>
-        <li> <a class="nav-link navbar-brand" routerLink="/contact"> contact</a></li>
-    </ul>
-    
-    <form class="navbar-form navbar-left" ></form>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Search">
-    </div>
-</nav>
-  
+</header>
+<script>
+    const minim = document.querySelector(".minimenu")
+    const navLinks = document.querySelector(".links")
 
+    minim.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+<section>
+</section>
